@@ -1,0 +1,17 @@
+#!/usr/bin/env perl
+use Mojolicious::Lite;
+
+# Documentation browser under "/perldoc"
+plugin 'PODRenderer';
+
+get '/' => sub {
+  my ($c, $args) = @_;
+  $c->render(template => 'main/index');
+};
+
+get '/new' => sub {
+  my ($c, $args) = @_;
+  $c->render(template => 'main/index');
+};
+
+app->start;
