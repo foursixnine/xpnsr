@@ -3,6 +3,7 @@
   <head><title><%= title %></title></head>
   <body>
   <%= content %>
+  <div id="development_console"><%= include 'layouts/development_console' %> </div>
   <div id="footer"> <%= link_to 'perldoc' => '/perldoc' %> | travis | </div>
   </body>
 </html>
