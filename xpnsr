@@ -19,12 +19,14 @@ get '/new' => sub {
 post '/add' => sub {
   my ($c) = @_;
   my $ammount = $c->param('ammount') // 0;
+  my $recurrying = $c->param('recurrying') || 'no';
   my $vendor = $c->param('vendor');
   my $category = $c->param('category'); 
   $c->flash(message => 'Thanks for expensing it');
   $c->stash(ammount => $ammount);
   $c->stash(vendor => $vendor);
   $c->stash(category => $category);
+  $c->stash(recurrying => $recurrying);
   $c->render(template => 'main/success');
 };
 

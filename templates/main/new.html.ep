@@ -8,6 +8,8 @@ Vendor:<br>
 <br>Ammount:<br>
 %= text_field 'ammount'
 <br>
+<br>Recurrying:<br>
+%= text_field 'recurrying'
 <br>Category:<br>
 %= text_field 'category'
 <br>

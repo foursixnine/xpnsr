@@ -2,5 +2,5 @@
 % if (my $msg = flash 'message') {
 <b><%= $msg %></b><br>
 % }
-<%= $vendor. ' ( ' . ucfirst ($category).  ' ) € ' . $ammount %>.<br>
+<%= $vendor. ' ( ' . ucfirst ($category).  ' ) € ' . $ammount .' | ' . uc($recurrying) %>.<br>
 %= link_to Logout => 'logout'
