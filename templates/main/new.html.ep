@@ -1,0 +1,15 @@
+% layout 'default';
+%= form_for add => begin
+% if (param 'user') {
+  <b>Wrong name or password, please try again.</b><br>
+% }
+Vendor:<br>
+%= text_field 'vendor'
+<br>Ammount:<br>
+%= text_field 'ammount'
+<br>
+<br>Category:<br>
+%= text_field 'category'
+<br>
+%= submit_button 'Expense it!!'
+% end
