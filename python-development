@@ -1,0 +1,4 @@
+export WORKON_HOME=~/python3.6
+source /home/foursixnine/.local/bin/virtualenvwrapper.sh
+mkvirtualenv xpnsr
+workon project_folder
